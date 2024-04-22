@@ -1,0 +1,81 @@
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #101840;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.25s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #343d69;
+    cursor: pointer;
+}
+
+.button--color-lightblue {
+    background-color: #3366ff;
+}
+
+.button--color-lightblue:hover {
+    background-color: #0040ff;
+}
+
+.button[data-active="true"] {
+    background-color: #343d69;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.button__icon--house::before {
+    font: var(--fa-font-solid);
+    content: "\f015";
+    font-size: 13px;
+}
+
+.button__icon--box::before {
+    font: var(--fa-font-solid);
+    content: "\f466";
+    font-size: 17px;
+}
+
+.button__icon--user-group::before {
+    font: var(--fa-font-solid);
+    content: "\f500";
+    font-size: 12px;
+}
+
+.button__icon--bolt::before {
+    font: var(--fa-font-solid);
+    content: "\f0e7";
+    font-size: 13px;
+}
+
+.button__icon--box-archive::before {
+    font: var(--fa-font-solid);
+    content: "\f187";
+    font-size: 15px;
+}
+
+.button__icon--clock-rotate-left::before {
+    font: var(--fa-font-solid);
+    content: "\f1da";
+    font-size: 15px;
+}
+
+.button__icon--plus::before {
+    font: var(--fa-font-solid);
+    content: "\2b";
+    font-size: 18px;
+}

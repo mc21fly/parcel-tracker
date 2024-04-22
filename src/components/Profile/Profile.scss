@@ -1,0 +1,57 @@
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.25s;
+    gap: 20px;
+
+    &--left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &--right {
+        display: flex;
+
+        &::after {
+            font: var(--fa-font-solid);
+            content: "\f078";
+            font-size: 12px;
+        }
+    }
+
+    &__avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        background-color: grey;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+
+        &--name {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        &--company {
+            font-size: 12px;
+            font-weight: 500;
+            color: #989bad;
+        }
+    }
+
+    &:hover {
+        background-color: #343d69;
+        cursor: pointer;
+    }
+}

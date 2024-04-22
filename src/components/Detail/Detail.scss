@@ -1,0 +1,18 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__name {
+        color: #989bad;
+        font-size: 12px;
+    }
+
+    &__value {
+        font-size: 14px;
+    }
+}
